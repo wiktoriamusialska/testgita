@@ -4,8 +4,13 @@
         System.out.println("Kliknij na przycisk zaloguj");
     }
 
-   public void logowanieMicrosoft() {
+ public void logowanieMicrosoft() {
         System.out.println("Podaj maila z Microsofta");
+        System.out.println("Podaj hasło");
+        System.out.println("Kliknij na przycisk zaloguj");
+    }
+ public void logowanieGoogle() {
+        System.out.println("Podaj email z gmaila");
         System.out.println("Podaj hasło");
         System.out.println("Kliknij na przycisk zaloguj");
     }
