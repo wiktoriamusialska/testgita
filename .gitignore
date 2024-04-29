@@ -1,5 +1,6 @@
 IgnoreMe
 /.idea/.gitignore
+/out/
 /out/production/testgita/.idea/.gitignore
 /out/production/testgita/.gitignore
 /out/production/testgita/Aplikacja.txt
