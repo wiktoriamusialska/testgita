@@ -6,13 +6,16 @@ import java.util.Scanner;
 
 public class StudentTest {
     public static void main(String[] args) {
+        String uczelnia = Student.nazwaUczelni; //uzywamy tego jako zmiennej zdefiniowanej w innej klasy jak jest static
+        Student.infoUczelnia(); //metoda statyczna moze byc uzyta dla kazdego obiektu w klasie
         Student student1= new Student();
         student1.imie ="XXX";
         student1.nazwisko="YYY";
         student1.nick="xxxyyy";
         student1.email="xxx.yyy@cos.pl";
         student1.numerIndeksu=123456;
-
+        String uczelniaAdama = student1.nazwaUczelni; //kazdy obiekt ma dostep do danej metody statycznej
+        student1.infoUczelnia();
         Student student2= new Student();
         student2.imie ="AAA";
         student2.nazwisko="BBB";
