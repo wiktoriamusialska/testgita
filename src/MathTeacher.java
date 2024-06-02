@@ -8,7 +8,9 @@ public class MathTeacher extends Person{
         System.out.println("Jestem w konstruktorze MathTeacher");
         this.school=school;
     }
-
+public void walk(){ //nadpiszemy metor z person
+    System.out.println(" I walk very fast");
+}
     public void teachMath() {
         System.out.println("I am teaching Math ");
     }

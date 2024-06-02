@@ -9,6 +9,9 @@ public class Footballer extends Person {
         System.out.println("Jestem w konstruktorze Footballer");
         this.footballClub=footballClub;
     }
+    public void eat() { //ta metoda nadpisze metode z person
+        System.out.println(" I like heathly food");
+    }
 
     public void playFootball() {
         eat();
