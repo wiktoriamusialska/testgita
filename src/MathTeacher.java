@@ -9,7 +9,8 @@ public class MathTeacher extends Person{
         this.school=school;
     }
 public void walk(){ //nadpiszemy metor z person
-    System.out.println(" I walk very fast");
+    super.walk();//wywolanie walk z klasy person (nadrzednej)
+        System.out.println(" I walk very fast");
 }
     public void teachMath() {
         System.out.println("I am teaching Math ");

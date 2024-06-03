@@ -1,6 +1,6 @@
 package src;
 
-public class Person {
+public class Person { //nie mozna dziedziczyc jesli klasa jest final
     public String name;
     public int age;
     public Person (String name, int age){
@@ -10,7 +10,7 @@ public class Person {
     }
     public void eat(){
         System.out.println(" I like pizza");
-    }
+    } //nie mozna nadpisac metody final
     public void walk(){
         System.out.println("I like walking");
     }
