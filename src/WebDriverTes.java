@@ -1,18 +1,25 @@
 package src;
 
+import java.sql.Driver;
+
 public class WebDriverTes {
     public static void main(String[] args) {
-        WebDriver driver = getDriver("chrome123");
+        DriverType[] driverTypes =DriverType.values();
+        for (int i=0; i<driverTypes.length; i++){
+            System.out.println(driverTypes[i].name);
+            System.out.println(driverTypes[i].path);
+        }
+        WebDriver driver = getDriver(DriverType.FIREFOX);
         driver.get();
         driver.findElementBy();
     }
 
-    private static WebDriver getDriver(String chrome){
-    if (chrome.equals("chrome")){
+    private static WebDriver getDriver(DriverType type) {
+    if (type.name.equals("chrome")){
+        System.out.println(type.path);
         return new ChromeDriver();
-    } else if (chrome.equals("firefox")){
-        return new FirefoxDriver();
     }
-    throw new NoValidBrowserName("No valid browser name");
+        System.out.println(type.path);
+        return new FirefoxDriver();
     }
 }
